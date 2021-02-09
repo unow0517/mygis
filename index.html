@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <title>Yn's GIS works</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
+</head>
+<body>
+  <div id="slider">
+    <input type="radio" name ="slider" id="slide1" checked>
+    <input type="radio" name ="slider" id="slide2" >
+    <input type="radio" name ="slider" id="slide3" >
+    <input type="radio" name ="slider" id="slide4" >
+    <div id="slides">
+      <div id="overflow">
+        <div class="inner">
+          <div class='slide slide_1'>
+            <div class="slide-content slide-content1">
+              <h2>CoronaMap</h2>
+              <img class='coronamap' src="./image/covidNewCases20-21.gif" alt="COVID_1Year"><br>
+              <span class='text'>worldmap.shp + WHO Covid19 Data => Temporal => 
+                export 383 png files => png to gif</span>
+            </div>
+          </div>
+          <div class='slide slide_2'>
+            <div class="slide-content slide-content2">
+              <h2>2m Flood on River Neckar</h2>
+              <img class='Neckar2m' src="./image/2m.png" alt="2mMap"><br>
+              <span class='text'></span>
+            </div>
+          </div>
+          <div class='slide slide_3'>
+            <div class="slide-content slide-content3">
+              <h2>5m Flood on River Neckar</h2>
+              <img class='Neckar5m' src="./image/5m.png" alt="5mMap"><br>
+              <span class='text'></span>
+            </div>
+          </div>
+          <div class='slide slide_4'>
+            <div class="slide-content slide-content4">
+              <h2>10m Flood on River Neckar</h2>
+              <img class='Neckar10m' src="./image/10m.png" alt="10mMap"><br>
+              <span class='text'></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="controls">
+      <!-- Label works as a button for input[type=radio]!!! -->
+      <label for ="slide1"></label>
+      <label for ="slide2"></label>
+      <label for ="slide3"></label>
+      <label for ="slide4"></label>
+    </div>
+    <div id="bullets">
+      <label for ="slide1"></label>
+      <label for ="slide2"></label>
+      <label for ="slide3"></label>
+      <label for ="slide4"></label>
+    </div>
+  </div>
+</body>
